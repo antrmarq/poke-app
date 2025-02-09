@@ -24,17 +24,5 @@
     <body class="h-screen bg-gray-100 dark:bg-gray-900">
         <!-- React App -->
         <div id="app" class="h-full text-gray-800 dark:text-gray-200 text-sm tracking-wide leading-normal flex flex-col"></div>
-
-        <!-- Dark Mode Script -->
-        <script>
-            const colorDom = document.getElementById('displaycolor');
-            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                colorDom.className = 'dark';
-            }
-
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-                colorDom.className = e.matches ? "dark" : "light";
-            });
-        </script>
     </body>
 </html>
